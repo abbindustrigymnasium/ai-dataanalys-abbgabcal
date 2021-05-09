@@ -27,7 +27,7 @@ font = pg.font.Font('freesansbold.ttf', 16)
 
 clock = pg.time.Clock()
 
-t = Tetris(start_level=15)
+t = Tetris(start_level=0)
 
 running = True
 
@@ -112,4 +112,3 @@ while running:
     screen.fill((0, 0, 0))
     drawGame(game_state)
     clock.tick(60)
-    # pg.display.flip()

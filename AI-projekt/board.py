@@ -3,7 +3,7 @@ import numpy as np
 
 class Board:
     def __init__(self):
-        self.landed = np.zeros(shape=(22,10), dtype=np.int8)
+        self.landed = np.zeros(shape=(22,10), dtype=np.int32)
 
     def printBoard(self):
         for row in self.landed:

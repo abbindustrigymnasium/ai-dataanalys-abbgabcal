@@ -10,7 +10,6 @@ class TetrisEnv():
         self.t = Tetris(start_level=self.start_level)
         self.prev_score = 0
         self.observation_space = spaces.Box(low=0, high=1, shape=(26,10), dtype=np.int8)
-        #self.action_space = [[-1,-1,0], [-1,-1,1], [0,-1,0], [0,-1,1], [1,-1,0], [1,-1,1], [-1,0,0], [-1,0,1], [0,0,0], [0,0,1], [1,0,0], [1,0,1],[-1,1,0],[-1,1,1], [0,1,0],[0,1,1], [1,1,0],[1,1,1]]
         # self.action_space = spaces.Tuple((spaces.Discrete(3), spaces.Discrete(3), spaces.Discrete(2)))
         self.action_space = spaces.Discrete(18)
 
