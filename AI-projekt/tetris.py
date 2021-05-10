@@ -1,21 +1,18 @@
 from board import Board
 from pieces import Piece
 import numpy as np
-# from copy import deepcopy
-from time import sleep
-import os
 
 
 class Tetris():
     def __init__(self, start_level = 0):
-
+        self.start_level = start_level
         self.board = Board()
         self.piece = Piece()
         self.running = True
-        self.rendered_board = np.zeros(shape=(22, 10), dtype=np.int8)
+        self.rendered_board = np.zeros(shape=(22, 10), dtype=np.int32)
         self.gameframe = 0
         self.cleared_rows = 0
-        self.level = start_level
+        self.level = self.start_level
         self.points = 0
         self.dropevery = 0
 
@@ -28,8 +25,18 @@ class Tetris():
                 if self.piece.current_piece[dy][dx]:
                     rendered_board[y + dy][x +
                                            dx] = self.piece.current_piece[dy][dx]
-        # rendered_board[y:y + len(self.piece.current_piece), x: x + len(self.piece.current_piece[0])] = self.piece.current_piece
         return rendered_board
+    
+    def reset(self):
+        self.board = Board()
+        self.piece = Piece()
+        self.running = True
+        self.rendered_board = np.zeros(shape=(22, 10), dtype=np.int32)
+        self.gameframe = 0
+        self.cleared_rows = 0
+        self.level = self.start_level
+        self.points = 0
+        self.dropevery = 0
 
     def gameloop(self, action=[0, 0, 0]):
         '''
@@ -41,7 +48,6 @@ class Tetris():
         Returns a tuple of the game state. (board, next_piece, level. lines_cleared, score, runnning)
         '''
         landed = False
-
         if self.level == 0:
             self.dropevery = 48
         elif self.level == 1: 
@@ -123,7 +129,6 @@ class Tetris():
                 self.piece.newPiece()
                 landed = False
 
-        # os.system('clear')
 
         self.gameframe += 1
         return (self.getRender(), self.piece.next_piece, self.level, self.cleared_rows, self.points, self.running)

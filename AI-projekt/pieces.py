@@ -48,12 +48,12 @@ class Pieces:
 class Piece(Pieces):
     def __init__(self):
         super().__init__()
-        self.next_piece = np.array(choice(self.pieces), dtype=np.int8)
+        self.next_piece = np.array(choice(self.pieces), dtype=np.int32)
         self.newPiece()
 
     def newPiece(self):
         self.current_piece = self.next_piece
-        self.next_piece = np.array(choice(self.pieces), dtype=np.int8)
+        self.next_piece = np.array(choice(self.pieces), dtype=np.int32)
         self.loc = [ceil(5 - len(self.current_piece[0])/2), 0]
 
     def rotatePiece(self, direction=0):
@@ -77,4 +77,3 @@ class Piece(Pieces):
 
     def movePiece(self, direction=0):
         self.loc[0] += direction
-    # def movePiece(self, dx, dy):
