@@ -32,4 +32,5 @@ labels = []
 class_id = 0
 names = {}
 
-for fx in os.listdir(dataset_path)
+for fx in os.listdir(dataset_path):
+    

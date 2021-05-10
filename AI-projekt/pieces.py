@@ -70,7 +70,7 @@ class Piece(Pieces):
         elif direction == -1:
             return np.rot90(self.current_piece, k=-1)
         else:
-            pass
+            return self.current_piece
 
     def getPotMove(self, direction = 0):
         return [self.loc[0] + direction, self.loc[1]]
