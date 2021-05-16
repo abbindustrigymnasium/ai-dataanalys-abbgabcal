@@ -1,6 +1,12 @@
 # TetrAI
 ## Innehåll
   - [Projektbeskrivning](#projektbeskrivning)
+  - [Resurser](#resurser)
+  - [Krav](#krav)
+  - [Filer](#filer)
+  - [Potentiella förbättringar](#potentiella förbättringar)
+  - [Svårigheter med projektet](#svårigheter med projektet)
+  - [Kända fel](#kända fel)
 
 ## Projektbeskrivning
 ---
@@ -41,11 +47,11 @@ En "tetrismotor". En slags "backend" som man kan koppla valfri klient, exempelvi
 ### game
 Vanligt hederligt tetrisspel. Bygger på pygame och kräver pygame installerat för att kunna köras. 
 
-### Potentiella förbättringar
+## Potentiella förbättringar
 * En AI som kan starta upp sitt lärande utifrån videos på andra som spelar tetris. Exempelvis proffs. Liknande som AlphaGo som började med att titta på stora mängder omgångar av spelet Go. 
 * En annan algoritm. Deep q-learning är kraftfullt men kanske inte den lämpligaste metoden för en AI att bli bra på tetris. Någon variant på genetisk algoritm hade förmodligen kunnat fungera bättre med mindre träning. 
 
-### Svårigheter med projektet
+## Svårigheter med projektet
 * Hela maskininlärningsbiten har varit svår men framförallt att skapa fungerande miljöer och att göra det möjligt att samla in data genom att man spelar spelet. Då det krävdes att man var tvungen att skapa en spelklient som kunde imitera en tf_agents miljö vilket krävde att man gick lite djupare in i tensorflow samt att det inte fanns någon dokmentation på internet som jag kunde hitta gällande just detta. 
 
 ## Kända fel
