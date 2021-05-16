@@ -18,7 +18,6 @@ Ett projekt där en AI ska spela en klon av tetris. Planen är att försöka anv
   * Tensorflow
   * tf_agents
   * numpy
-  * ffmpeg (krävs för att skapa videos)
   * ImageIo
   * pygame (krävs endast för att använda ditt eget spelande som träningsdata)
   * 
@@ -26,7 +25,8 @@ Ett projekt där en AI ska spela en klon av tetris. Planen är att försöka anv
   * Cuda kompatibelt grafikkort (testat med gtx 1060)
 * Mjukvara
   * Python (testat på 3.8.8)
-  * NVIDIA Cuda (testat med cuda 11) 
+  * NVIDIA Cuda (testat med cuda 11)
+  * ffmpeg (krävs för att skapa videos)
 
 ## Filer
 --- 
