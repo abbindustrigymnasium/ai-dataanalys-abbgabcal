@@ -4,9 +4,9 @@
   - [Resurser](#resurser)
   - [Krav](#krav)
   - [Filer](#filer)
-  - [Potentiella förbättringar](#potentiella förbättringar)
-  - [Svårigheter med projektet](#svårigheter med projektet)
-  - [Kända fel](#kända fel)
+  - [Potentiella förbättringar](#potentiella_förbättringar)
+  - [Svårigheter med projektet](#svårigheter_med projektet)
+  - [Kända fel](#kända_fel)
 
 ## Projektbeskrivning
 ---
