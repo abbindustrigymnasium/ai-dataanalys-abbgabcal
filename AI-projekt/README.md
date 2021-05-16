@@ -4,22 +4,19 @@
   - [Resurser](#resurser)
   - [Krav](#krav)
   - [Filer](#filer)
-  - [Potentiella förbättringar](#potentiella)
-  - [Svårigheter med projektet](#svårigheter)
-  - [Kända fel](#kända_fel)
+  - [Potentiella förbättringar](#potentiella-förbättringar)
+  - [Svårigheter med projektet](#svårigheter-med-projektet)
+  - [Kända fel](#kända-fel)
 
 ## Projektbeskrivning
----
 Ett projekt där en AI ska spela en klon av tetris. Planen är att försöka använda sig av deep Q-learning för att lära upp AI:n. Tetrisklonen är en klon av tetris specialgjord för att en AI ska kunna spela. 
 
 ## Resurser
----
 - [tf_agents dokumentation](https://www.tensorflow.org/agents)
 - [Tensorflow dokumentation](https://www.tensorflow.org/api_docs)
 - [Exempel på DQN](https://colab.research.google.com/github/tensorflow/agents/blob/master/docs/tutorials/1_dqn_tutorial.ipynb#scrollTo=KEHR2Ui-lo8O)
 
 ## Krav
----
 * Bibliotek
   * Tensorflow
   * tf_agents
@@ -35,7 +32,6 @@ Ett projekt där en AI ska spela en klon av tetris. Planen är att försöka anv
   * ffmpeg (krävs för att skapa videos)
 
 ## Filer
---- 
 ### gameInputModel
 Tensorflowagent som använder sig utav deep q learning för att lära sig tetris. Börjar med att samla in information när du spelar tetris och lär sig utav det. Använder sig utav miljön TFGameInputEnv för att kommunicera med spelet. Kräver pygame. 
 ### TFAgent
